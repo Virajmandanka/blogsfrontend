@@ -22,7 +22,7 @@ function Signup() {
    const handalsbmit=(e)=>{
     e.preventDefault()
 
-    fetch(`http://localhost:8080/user/register`,{
+    fetch(`https://blogsbackend-5.onrender.com/user/register`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",

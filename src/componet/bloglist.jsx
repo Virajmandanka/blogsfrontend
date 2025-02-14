@@ -14,7 +14,7 @@ const Bloglist = () => {
         const fetchBlogs = async () => {
             const token = localStorage.getItem("token");
             try {
-                const response = await fetch("http://localhost:8080/blog", {
+                const response = await fetch("https://blogsbackend-5.onrender.com/blog", {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",

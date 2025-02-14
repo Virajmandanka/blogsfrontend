@@ -1,12 +1,4 @@
-// import React from 'react'
 
-// function Singalblog() {
-//   return (
-//     <div>singalblog</div>
-//   )
-// }
-
-// export default Singalblog
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -21,7 +13,7 @@ const Singalblog = () => {
         const fetchBlog = async () => {
             const token = localStorage.getItem("token");
             try {
-                const response = await fetch(`http://localhost:8080/blog/singal/${id}`, {
+                const response = await fetch(`https://blogsbackend-5.onrender.com/blog/singal/${id}`, {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",

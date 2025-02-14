@@ -18,7 +18,7 @@ function Addblog() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:8080/blog/add`, {
+    fetch(`https://blogsbackend-5.onrender.com/blog/add`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -15,7 +15,7 @@ const Update = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const response = await fetch(`http://localhost:8080/blog/blog/${id}`, {
+                const response = await fetch(`https://blogsbackend-5.onrender.com/blog/blog/${id}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ const Update = () => {
     const handleSubmit = (e) => {
         e.preventDefault(); 
     
-        fetch(`http://localhost:8080/blog/edit/${id}`, {
+        fetch(`https://blogsbackend-5.onrender.com/blog/edit/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

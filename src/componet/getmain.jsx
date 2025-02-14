@@ -13,7 +13,7 @@ const Getmain = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await fetch('http://localhost:8080/blog/getMine', {
+                const response = await fetch('https://blogsbackend-5.onrender.com/blog/getMine', {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const Getmain = () => {
 
     const handaldelete=async(blogId)=>{
 
-       await fetch(`http://localhost:8080/blog/delete/${blogId}`,{
+       await fetch(`https://blogsbackend-5.onrender.com/blog/delete/${blogId}`,{
             method:'DELETE',
             headers:{
                 'Content-Type':'application/json',
