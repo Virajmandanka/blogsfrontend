@@ -1,7 +1,7 @@
 
 
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
 
 
@@ -10,7 +10,7 @@ const Bloglist = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         const fetchBlogs = async () => {
             const token = localStorage.getItem("token");
             try {
