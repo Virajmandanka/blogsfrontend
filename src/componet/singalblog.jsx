@@ -41,15 +41,19 @@ const Singalblog = () => {
     if (error) return <p>Error: {error}</p>;
 
     return blog ? (
-        <div>
-            <h2>{blog.title}</h2>
-            {blog.image && <img src={blog.image} alt={blog.title} width="200" />}
-            <p>{blog.description}</p>
-             {blog.userID ? (
+        <div className="singalblog">
+            <div className="singalcard">
+            
+            {blog.image && <img src={blog.image} alt={blog.title} width="200" className="singalimage" />}
+            
+            <h2 className="r">{blog.title}</h2>
+            <p className="am">Description:-{blog.description}</p>
+             {/* {blog.userID ? (
                         <small>By: {blog.userID.username} ({blog.userID.email})</small>
                     ) : (
                         <small>By: Unknown Author</small>
-                    )}
+                    )} */}
+        </div>
         </div>
     ) : (
         <p>Blog not found</p>

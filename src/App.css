@@ -514,6 +514,43 @@ h2 {
   background-color: #0056b3;
 }
 
+/*singalblogs*/
+
+.singalblog{
+  height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.singalcard{
+  height: 330px;
+  width: 500px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.singalimage{
+  height: 200px;
+  width: 380px;
+  /* border: 1px solid black; */
+  margin-left: 55px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.r{
+   text-align: center;
+}
+.am{
+
+  text-align: start;
+  margin-left: 55px;
+  color: #858484;
+
+}
+
 
 
 
